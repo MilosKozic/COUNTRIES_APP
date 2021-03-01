@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "Milos",
+      "email": "m@msms.c",
+      "password": "Mkjlksa22..",
+      "id": 1
+    },
+    {
+      "username": "Marko",
+      "email": "m@marko.com",
+      "password": "Marko123..",
+      "id": 2
+    },
+    {
+      "username": "MilosKozic",
+      "email": "milos@kozic.com",
+      "password": "Milos1986..",
+      "id": 3
+    },
+    {
+      "username": "Jovana",
+      "email": "jovana@gmail.com",
+      "password": "Jovana123..",
+      "id": 4
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export const getUsers = () => {
     return axios.get('http://localhost:3005/users')
 }
 
-export const getCityForecast =(city)=> axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=eabac33fe6ddae5c4cb0b2393407b914`)
+export const getCityForecast =(city)=> axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
 
 export const getOneCountry =(country)=> axios.get(`https://restcountries.eu/rest/v2/name/${country}`)
 

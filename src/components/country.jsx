@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Switch, Route, Link, useParams, useHistory } from 'react-router-dom'
 import { StyledOneItem } from './styledComponents'
-import { getCityForecast, getOneCountry,KelvinToCels,KelvinToFarenh } from './service'
+import { getCityForecast, getOneCountry, KelvinToCels, KelvinToFarenh } from './service'
 import { useEffect, useState } from 'react'
 
 export const Country = ({ countries }) => {
     let { country } = useParams()
     let oneCountry = countries.filter(el => el.name == country)
-   
+
     let history = useHistory()
-    const[tempUnit,setTempunit]=useState(false)
+    const [tempUnit, setTempunit] = useState(false)
     const [forecast, setForecast] = useState()
 
 
@@ -16,10 +16,13 @@ export const Country = ({ countries }) => {
         let mounted = true
         getOneCountry(country).then(res => {
             if (mounted) {
-               
-                getCityForecast(res.data[0].capital).then(res => {
-                    setForecast(res.data)
-                })
+                res.data[0].capital ?
+                    getCityForecast(res.data[0].capital).then(res => {
+                        setForecast(res.data)
+
+                    })
+                    :
+                    setForecast(null)
             }
             return () => { mounted = false }
         })
@@ -43,20 +46,26 @@ export const Country = ({ countries }) => {
                     <img src={`${oneCountry[0]?.flag}`}></img>
                 </div >
             </StyledOneItem>
-            <StyledOneItem >
-                <button onClick={()=>{
-                    setTempunit(!tempUnit)
-                }}>&#x2103; / &#x2109;</button>
-                
-                {tempUnit?
+            {forecast ?
+                <StyledOneItem >
+                    <button onClick={() => {
+                        setTempunit(!tempUnit)
+                    }}>&#x2103; / &#x2109;</button>
+
+                    {tempUnit ?
                         <p>Temperature : {KelvinToFarenh(forecast?.main.temp)}<>&#x2109;</> </p>
                         :
                         <p>Temperature: {KelvinToCels(forecast?.main.temp)}<>&#x2103;</></p>
+                    }
+
+                    <p>Weather : {forecast?.weather[0].main}</p>
+                    <p>Wind speed: {forecast?.wind.speed} mp/h </p>
+                </StyledOneItem>
+                :
+                <StyledOneItem>
+                    <p>No forecast data available</p>
+                </StyledOneItem>
                 }
-              
-                <p>Weather : {forecast?.weather[0].main}</p>
-                <p>Wind speed: {forecast?.wind.speed} mp/h </p>
-            </StyledOneItem>
         </>
     )
 }

@@ -136,16 +136,17 @@ p{
 
   }
   button{
+    display:flex;
     margin-left:50px;
-    height:40px;
-    padding:5px 30px;
+    margin-top:27px;
+    height:42px;
+    padding:5px 31px;
     color: white;
    font-size:1em;
     background: linear-gradient(rgba(247, 250, 246, 0.1),rgba(22, 32, 19, 0.9));
     border:0.5px solid white;
 :hover{
-  background:green;
-  
+  background:#142414; 
   }
 }
 `
@@ -170,6 +171,6 @@ color: white;
 font-size:1em;
 background: linear-gradient(rgba(247, 250, 246, 0.1),rgba(22, 32, 19, 0.9));
 :hover{
-background:#162218;
+background:#111311;
 }
 `

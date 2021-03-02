@@ -11,7 +11,7 @@ export const Country = ({ countries }) => {
     const[tempUnit,setTempunit]=useState(false)
     const [forecast, setForecast] = useState()
 
-    console.log(process.env.REACT_APP_WEATHER_API_KEY)
+
     useEffect(() => {
         let mounted = true
         getOneCountry(country).then(res => {

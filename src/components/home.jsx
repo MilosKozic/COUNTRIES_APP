@@ -47,9 +47,9 @@ export const Login = ({ setUser, user }) => {
 
 export const Register = ({user}) => {
     let hist = useHistory()
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [passw, setPassw] = useState()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [passw, setPassw] = useState('')
    
     var paswd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/
     return  (

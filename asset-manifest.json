@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/COUNTRIES_APP/static/css/main.aa038389.chunk.css",
-    "main.js": "/COUNTRIES_APP/static/js/main.086f8dfd.chunk.js",
-    "main.js.map": "/COUNTRIES_APP/static/js/main.086f8dfd.chunk.js.map",
+    "main.js": "/COUNTRIES_APP/static/js/main.ffbb5e29.chunk.js",
+    "main.js.map": "/COUNTRIES_APP/static/js/main.ffbb5e29.chunk.js.map",
     "runtime-main.js": "/COUNTRIES_APP/static/js/runtime-main.43515de9.js",
     "runtime-main.js.map": "/COUNTRIES_APP/static/js/runtime-main.43515de9.js.map",
-    "static/js/2.82d986a8.chunk.js": "/COUNTRIES_APP/static/js/2.82d986a8.chunk.js",
-    "static/js/2.82d986a8.chunk.js.map": "/COUNTRIES_APP/static/js/2.82d986a8.chunk.js.map",
+    "static/js/2.0b3e9974.chunk.js": "/COUNTRIES_APP/static/js/2.0b3e9974.chunk.js",
+    "static/js/2.0b3e9974.chunk.js.map": "/COUNTRIES_APP/static/js/2.0b3e9974.chunk.js.map",
     "index.html": "/COUNTRIES_APP/index.html",
     "static/css/main.aa038389.chunk.css.map": "/COUNTRIES_APP/static/css/main.aa038389.chunk.css.map",
-    "static/js/2.82d986a8.chunk.js.LICENSE.txt": "/COUNTRIES_APP/static/js/2.82d986a8.chunk.js.LICENSE.txt",
+    "static/js/2.0b3e9974.chunk.js.LICENSE.txt": "/COUNTRIES_APP/static/js/2.0b3e9974.chunk.js.LICENSE.txt",
     "static/media/index.css": "/COUNTRIES_APP/static/media/wp3491779-cool-map-wallpaper.ff42adfd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.43515de9.js",
-    "static/js/2.82d986a8.chunk.js",
+    "static/js/2.0b3e9974.chunk.js",
     "static/css/main.aa038389.chunk.css",
-    "static/js/main.086f8dfd.chunk.js"
+    "static/js/main.ffbb5e29.chunk.js"
   ]
 }

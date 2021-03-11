@@ -5,6 +5,7 @@ import { Login,Register,Home } from './components/home'
 import { Countries } from './components/countries'
 import { Country } from './components/country'
 import { StyledHome,StyledDivHome } from './components/styledComponents'
+import { HashRouter } from 'react-router-dom'
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/">
+      <HashRouter>
         <header>
         {
           user  ?
@@ -65,7 +66,7 @@ function App() {
             <Country countries={countries}  />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </>
   );
 }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,EAEI,qBACJ,CACA,KACI,oJAEJ","file":"main.4c21c6ab.chunk.css","sourcesContent":["*{\r\n  \r\n    box-sizing: border-box;\r\n}\r\nbody{\r\n    background-image:linear-gradient(rgba(13, 22, 12, 0.842),rgba(22, 32, 19, 0.534)), url(img/wp3491779-cool-map-wallpaper.jpg);\r\n   \r\n}\r\n\r\n"]}

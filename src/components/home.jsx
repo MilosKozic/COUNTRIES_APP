@@ -60,7 +60,7 @@ export const Register = ({user}) => {
             if (passw.length < 8 || !passw.match(paswd)) return window.alert('Sifra mora sadrzati izmedju 8 i 15 karaktera,  minimum jedno malo slovo, jedno veliko slovo, jedan broj i jedan specijalan karakter')
 
             getUsers().then(res => {
-                console.log(res.data)
+               
                 let user = {
                     username: name,
                     email: email,

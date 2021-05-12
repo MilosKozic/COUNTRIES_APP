@@ -20,15 +20,10 @@ Next, you need to clone GIT repo
 * Axios
 * Git
 * VSCode
+* CSS
+* HTML
 
 ---
 ## Description of project
  Search countries, and by clicking on each individual country you can get specific country information.
 
-
-## Note
-
-The login page is still under development, you can register with a trial account
-
-* username - Jovana
-* password - Jovana123..
